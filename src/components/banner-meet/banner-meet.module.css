@@ -1,0 +1,126 @@
+.bannerSection{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.bgPerson{
+    position: absolute;
+    height: 130%;
+    width: 35%;
+    bottom: 0px;
+    right: 15%;
+}
+
+.bgPerson .img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.degrad{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to Right, black, rgba(0, 0, 0, 0));
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.degradTwo{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to Left, black, rgba(0, 0, 0, 0));
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.bgImage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    border-top: 1px solid rgba(255, 255, 255, 0.355);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.355);
+}
+
+.infoBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    justify-content: center;
+    margin-left: 15%;
+    gap: 10px;
+}
+
+.infoBanner h2{
+    text-transform: uppercase;
+    font-size: 3.5vw;
+    font-family: 'KerbyFont', sans-serif;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.infoBanner p{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.bannerSection button{
+    margin-left: 15%;
+    background-color: rgba(0, 0, 0, 0.231);
+    backdrop-filter: blur(4px);
+    border: 1px solid yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    font-size: 1.1rem;
+    padding: 10px 10px 10px 25px;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.boxIcon{
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxIcon .icon{
+    font-size: 1.4rem;
+    color: black;
+    transform: rotate(-45deg);
+}
+
+.bannerSection button:hover{
+    background-color: yellow;
+    color: black;
+
+    .boxIcon{
+        background-color: black;
+    }
+
+    .icon{
+        color: yellow;
+    }
+}

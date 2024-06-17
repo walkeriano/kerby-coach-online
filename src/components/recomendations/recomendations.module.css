@@ -1,0 +1,181 @@
+.secRecomendations {
+  width: 85%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+  position: relative;
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 40px;
+}
+
+.titleSection h2 {
+  font-size: 6.3vw;
+  text-transform: uppercase;
+  font-family: "KerbyFont", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.titleSection h2 span {
+  color: yellow;
+}
+
+.infoSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.infoSection p {
+  font-size: 1.6vw;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.infoSection p span {
+  color: yellow;
+}
+
+.itemRecomend {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.imgItem {
+  width: 60%;
+  height: 37vh;
+  position: relative;
+  cursor: pointer;
+}
+
+.imgItem .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 30px;
+}
+
+.imgItem:hover {
+  .boxMore {
+    background-color: yellow;
+  }
+
+  .icon {
+    color: black;
+  }
+}
+
+.boxMore {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  position: absolute;
+  border: 2px solid yellow;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxMore .icon {
+  font-size: 1.4rem;
+  color: yellow;
+}
+
+.boxMoreTwo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  position: absolute;
+  border: 2px solid yellow;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxMoreTwo .icon {
+  font-size: 1.4rem;
+  color: yellow;
+}
+
+.imgItem:hover {
+  .boxMoreTwo {
+    background-color: yellow;
+  }
+
+  .icon {
+    color: black;
+  }
+}
+
+.textPerson {
+  width: 40%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+}
+
+.textPerson h4 {
+  font-size: 1.7rem;
+  width: 100%;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.textPerson .namePerson {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: grey;
+}
+
+.textPerson .namePerson p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.textPerson .namePerson .icon {
+  font-size: 1.2rem;
+}
+
+.blurYellow {
+  position: absolute;
+  left: -70%;
+  top: 0;
+  z-index: -2;
+  width: 90%;
+  height: 60vh;
+  background-image: radial-gradient(closest-side, rgb(60, 58, 0), black);
+}
+
+
+.blurYellowTwo {
+  position: absolute;
+  right: -65%;
+  top: 110vh;
+  z-index: -2;
+  width: 90%;
+  height: 60vh;
+  background-image: radial-gradient(closest-side, rgb(60, 58, 0), black);
+}

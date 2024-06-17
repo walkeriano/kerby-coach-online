@@ -1,0 +1,462 @@
+.firstSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  margin-bottom: 100px;
+}
+
+.secOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.secOne h2 {
+  font-size: 6.6vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "KerbyFont", sans-serif;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.secOne h2 span {
+  color: yellow;
+}
+
+.secOne p {
+  font-size: 1.6vw;
+  color: grey;
+  font-weight: 400;
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+
+.secOne p span {
+  color: white;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+.secOne p span:hover{
+  color: yellow;
+  border-bottom: 1px solid yellow;
+}
+
+.secTwo {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.serviceItem {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+}
+
+.serviceItem .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px 45px 45px 0px;
+  z-index: -1;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.secTwo .serviceItem:last-child .img {
+  border-radius: 45px 0px 0px 45px;
+  border-left: 1px solid transparent;
+}
+
+.serviceItem:hover {
+  .img {
+    border-top: 1px solid yellow;
+    border-right: 1px solid yellow;
+    border-bottom: 1px solid yellow;
+  }
+
+  .infoLeft h3, .infoLeft p {
+    color: yellow;
+  }
+}
+
+.serviceItem:last-child:hover{
+  .img {
+    border-top: 1px solid yellow;
+    border-left: 1px solid yellow;
+    border-bottom: 1px solid yellow;
+    border-right: 1px solid transparent;
+  }
+
+  .infoRight h3, .infoRight p {
+    color: yellow;
+  }
+
+}
+
+.contState {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newState, .newStateRight {
+  position: relative;         
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 0, 0.672);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0px 45px 45px 0px;
+}
+
+.newStateRight{
+  border-radius: 45px 0px 0px 45px;
+}
+
+.buyBtn{
+  position: absolute;
+  bottom: -110px;
+  left: 5%;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 10px 10px 25px;
+  border-radius: 50px;
+  border: none;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.buyBtn .boxIcon{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.buyBtn .boxIcon .icon{
+  font-size: 1.3rem;
+  color: white;
+}
+
+.buyBtn:hover{
+  background-color: yellow;
+
+  .icon{
+    color: yellow;
+  }
+}
+
+.buyBtnRight{
+  position: absolute;
+  bottom: -110px;
+  right: 5%;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 25px 10px 10px;
+  border-radius: 50px;
+  border: none;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.buyBtnRight .boxIcon{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.buyBtnRight .boxIcon .icon{
+  font-size: 1.3rem;
+  color: white;
+}
+
+.buyBtnRight:hover{
+  background-color: yellow;
+
+  .icon{
+    color: yellow;
+  }
+}
+
+.detailsItem {
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.detailsItem img {
+  width: 17px;
+}
+
+.infoLeft {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.infoLeft h3,
+.infoRight h3 {
+  font-size: 3.5vw;
+  text-transform: uppercase;
+  font-family: "KerbyFont", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.infoLeft p,
+.infoRight p {
+  font-size: 1.3rem;
+  color: white;
+  width: 65%;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.infoLeftState {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.infoLeftState h3,
+.infoRightState h3 {
+  font-size: 3.5vw;
+  text-transform: uppercase;
+  font-family: "KerbyFont", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.infoLeftState p,
+.infoRightState p {
+  font-size: 1.3rem;
+  color: black;
+  width: 65%;
+  letter-spacing: 1px;
+  line-height: 1.4;
+ 
+}
+
+.btnCloseService {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btnCloseService .icon {
+  color: black;
+  font-size: 1.3rem;
+}
+
+.btnCloseService:hover {
+  background-color: black;
+  .icon {
+    color: yellow;
+  }
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.detail p {
+  font-size: 2.5vw;
+  color: black;
+  text-transform: uppercase;
+  font-family: "KerbyFont", sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.btnServiceLeft {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 10px;
+}
+
+.btnServiceLeft button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 10px 10px 25px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 1.0rem;
+  letter-spacing: 1.5px;
+  background-color: rgba(0, 0, 0, 0.259);
+  backdrop-filter: blur(4px);
+  border: 1px solid yellow;
+  color: yellow;
+  cursor: pointer;
+}
+
+.btnServiceLeft button .boxIcon {
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnServiceLeft button .boxIcon .icon {
+  font-size: 1.3rem;
+  color: black;
+  transform: rotate(-45deg);
+}
+
+.btnServiceLeft button:hover {
+  background-color: yellow;
+  color: black;
+
+  .boxIcon {
+    background-color: black;
+  }
+
+  .icon {
+    color: yellow;
+  }
+}
+
+.infoRight {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.infoRightState {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.infoRight p,
+.infoRightState p {
+  text-align: right;
+  width: 50%;
+}
+
+.btnServiceRight {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 10px;
+}
+
+.btnServiceRight button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 25px 10px 10px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 1.0rem;
+  letter-spacing: 1.5px;
+  background-color: rgba(0, 0, 0, 0.259);
+  backdrop-filter: blur(4px);
+  border: 1px solid yellow;
+  color: yellow;
+  cursor: pointer;
+}
+
+.btnServiceRight button .boxIcon {
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnServiceRight button .boxIcon .icon {
+  font-size: 1.3rem;
+  color: black;
+  transform: rotate(-135deg);
+}
+
+.btnServiceRight button:hover {
+  background-color: yellow;
+  color: black;
+
+  .boxIcon {
+    background-color: black;
+  }
+
+  .icon {
+    color: yellow;
+  }
+}

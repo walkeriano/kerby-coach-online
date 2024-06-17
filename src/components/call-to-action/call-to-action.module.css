@@ -1,0 +1,56 @@
+.callToAction{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 5%;
+}
+
+.callToAction h4{
+    font-size: 3vw;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'KerbyFont', sans-serif;
+    font-weight: 300;
+}
+
+.callToAction button{
+    text-transform: uppercase;
+    font-size: 1.0rem;
+    letter-spacing: 1px;
+    padding: 6px  6px 6px 20px;
+    border-radius: 50px;
+    background-color: black;
+    border: 1px solid yellow;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.callToAction button .boxIcon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.callToAction button .boxIcon .icon{
+    font-size: 1.5rem;
+    color: black;
+    transform: rotate(-45deg);
+}
+
+.blurYellowTwo{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 30vh;
+    background-image: radial-gradient(closest-side, rgb(42, 42, 0),rgba(0, 0, 0, 0));
+}
