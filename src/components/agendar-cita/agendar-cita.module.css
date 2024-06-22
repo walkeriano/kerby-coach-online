@@ -1,0 +1,383 @@
+.containCalendar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 17vh;
+  margin-bottom: 80px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.title h2 {
+  font-family: "KerbyFont", sans-serif;
+  font-size: 4.5vw;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+}
+
+.title h2 span{
+  color:yellow;
+}
+
+.title p {
+  font-size: 1.1rem;
+  width: 50%;
+  text-align: center;
+}
+
+.containCalendar .buttonSubmit {
+  border: 1px solid yellow;
+  padding: 10px 10px 10px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+}
+
+.containCalendar .buttonSubmit .boxIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containCalendar .buttonSubmit .boxIcon .icon {
+  font-size: 1.4rem;
+  color: black;
+  transform: rotate(-45deg);
+}
+
+.containCalendar .buttonSubmit:hover {
+  background-color: yellow;
+  color: black;
+
+  .boxIcon {
+    background-color: black;
+  }
+
+  .icon {
+    color: yellow;
+  }
+}
+
+.contForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.leftSection {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.leftSection .input {
+  background-color: transparent;
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  text-align: center;
+  color: white;
+  outline: none;
+}
+
+.leftSection .input::placeholder {
+  font-size: 0.8rem;
+}
+
+.leftSection .input:hover {
+  border: 1px solid white;
+}
+
+.leftSection .input:active {
+  border: 1px solid white;
+}
+
+.leftSection .input:focus {
+  border: 1px solid white;
+}
+
+.leftSection .input:valid{
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+.leftSection .input:invalid:focus,
+.leftSection .input:invalid:active{
+    color: red;
+    border: 1px solid red;
+}
+
+.leftSection .boxInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.leftSection .boxInput p {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.leftSection .boxInput .inputTime {
+  background-color: transparent;
+  width: 40%;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  text-align: center;
+  color: white;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.leftSection .boxInput .inputTime:hover {
+  border: 1px solid white;
+}
+
+.leftSection .boxInput .inputTime:active {
+  border: 1px solid white;
+}
+
+.leftSection .boxInput .inputTime:focus {
+  border: 1px solid white;
+}
+
+.leftSection .boxInput .inputTime::-webkit-calendar-picker-indicator{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.leftSection .boxInput .inputTime:valid{
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+.leftSection .boxInput .inputTime:invalid:focus,
+.leftSection .boxInput .inputTime:invalid:active{
+    color: red;
+    border: 1px solid red;
+}
+
+.contPayment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 60px;
+}
+
+.contPayment h3 {
+  font-family: "KerbyFont", sans-serif;
+  font-size: 4.5vw;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.contPayment h3 span{
+  color: yellow;
+}
+
+.infoExtra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgb(87, 87, 87);
+  padding: 10px 15px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.infoExtra span {
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -7px;
+  background-color: rgb(87, 87, 87);
+}
+
+.infoExtra p {
+  font-size: 1rem;
+  color: white;
+}
+
+.infoExtra .icon {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.containerPay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.containerPay .btnPayFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid yellow;
+  border-radius: 50px;
+}
+
+.containerPay .btnPayFlex .btnPayOn {
+  background-color: transparent;
+  color: black;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border-radius: 50px;
+  border: 1px solid transparent;
+}
+
+.containerPay .btnPayFlex .btnPayOn.active {
+  background-color: yellow;
+  border: 1px solid yellow;
+}
+
+.containerPay .btnPayFlex .btnPayOn.inactive {
+  background-color: black;
+  color: white;
+  border: 1px solid transparent;
+}
+
+.containerPay .btnPayFlex .btnPayOn.inactive:hover {
+  color: yellow;
+}
+
+.showInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.showInfo h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.showInfo .generalData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.showInfo .boxBanco {
+  background-color: white;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showInfo .infoCuenta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.showInfo .infoCuenta .datoCuenta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+}
+
+.showInfo .infoCuenta .datoCuenta p {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.showInfo .infoCuenta .datoCuenta .item {
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 0.9rem;
+  height: 35px;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+.showInfo .infoCuenta .datoCuenta .item .box {
+  height: 35px;
+  width: 35px;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+
+.showInfo .infoCuenta .datoCuenta .item .icon {
+  font-size: 1.2rem;
+}
+
+.showInfo .infoCuenta .datoCuenta .item:hover {
+  border: 1px solid white;
+
+  .box {
+    background-color: yellow;
+  }
+
+  .icon {
+    color: black;
+  }
+}

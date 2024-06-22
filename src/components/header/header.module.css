@@ -6,6 +6,23 @@
     position: absolute;
     top: 35px;
     z-index: 1;
+    animation: 2.8s ease-in-out bg;
+}
+
+
+@keyframes bg {
+    0%{
+        transform: translateY(-150%);
+    }
+    45%{
+        transform: translateY(-150%);
+    }
+    75%{
+        transform: translateY(-150%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
 }
 
 .logoKerby{

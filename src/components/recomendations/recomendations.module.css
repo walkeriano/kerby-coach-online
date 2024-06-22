@@ -162,7 +162,7 @@
 .blurYellow {
   position: absolute;
   left: -70%;
-  top: 0;
+  top: 30%;
   z-index: -2;
   width: 90%;
   height: 60vh;

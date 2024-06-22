@@ -30,12 +30,15 @@ export default function BannerMeet() {
       </div>
       <span className={stylesBannerMeet.degrad} ></span>
       <span className={stylesBannerMeet.degradTwo} ></span>
+      <span className={stylesBannerMeet.whiteLight}></span>
+      <span className={stylesBannerMeet.whiteLightTwo}></span>
       <Image
         src="/images/bg-banner-call.jpg"
         alt="image-bg-gym"
         fill={true}
         className={stylesBannerMeet.bgImage}
       />
+      <span className={stylesBannerMeet.yellowLight}></span>
     </section>
   );
 }

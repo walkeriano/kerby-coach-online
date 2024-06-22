@@ -7,7 +7,7 @@
     justify-content: space-evenly;
     position: relative;
     margin-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
 }
 
 .bgPerson{
@@ -122,5 +122,82 @@
 
     .icon{
         color: yellow;
+    }
+}
+
+.yellowLight{
+    position: absolute;
+    height: 65vh;
+    width: 80%;
+    background-image: radial-gradient(closest-side, rgb(73, 73, 0),rgba(0, 0, 0, 0));
+    z-index: -3;
+    left: 5%;
+    animation: 5s ease-in-out infinite move;
+}
+
+@keyframes move {
+    0%{
+        width: 100%;
+        height: 70vh;
+    }
+    50%{
+        width: 80%;
+        height: 60vh;
+    }
+    100%{
+        width: 100%;
+        height: 70vh;
+    }
+}
+
+.whiteLight{
+    position: absolute;
+    height: 5px;
+    width: 10%;
+    background-image: radial-gradient(closest-side, rgb(155, 155, 155),rgba(0, 0, 0, 0));
+    z-index: -1;
+    left: 15%;
+    top: -2px;
+    animation: 5s ease-in-out infinite moveTwo;
+}
+
+@keyframes moveTwo {
+    0%{
+        left: 45%;
+        width: 50%;
+    }
+    50%{
+        left: 15%;
+        width: 10%;
+    }
+    100%{
+        left: 45%;
+        width: 50%;
+    }
+}
+
+.whiteLightTwo{
+    position: absolute;
+    height: 5px;
+    width: 10%;
+    background-image: radial-gradient(closest-side, rgb(155, 155, 155),rgba(0, 0, 0, 0));
+    z-index: -1;
+    right: 15%;
+    bottom: -2px;
+    animation: 5s ease-in-out infinite moveTre;
+}
+
+@keyframes moveTre {
+    0%{
+        right: 45%;
+        width: 50%;
+    }
+    50%{
+        right: 15%;
+        width: 10%;
+    }
+    100%{
+        right: 45%;
+        width: 50%;
     }
 }

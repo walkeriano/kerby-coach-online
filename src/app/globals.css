@@ -4,14 +4,19 @@
   margin: 0;
 }
 
-:root{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
   background-color: black;
   overflow-x: hidden;
 }
 
 @font-face {
-  font-family: 'KerbyFont';
-  src: url('/fonts/LeagueGothic-Regular-VariableFont_wdth.ttf') format('truetype');
+  font-family: "KerbyFont";
+  src: url("/fonts/LeagueGothic-Regular-VariableFont_wdth.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }

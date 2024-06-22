@@ -1,4 +1,6 @@
 import stylesHero from "./hero.module.css";
+import Link from "next/link";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -24,7 +26,7 @@ export default function Hero() {
           </h2>
         </div>
         <div className={stylesHero.btnsHero} >
-          <button className={stylesHero.btnFirst} type="button">
+          <Link href="/asesoria-regular" className={stylesHero.btnFirst}>
             cotiza aquí
             <div className={stylesHero.iBtn}>
               <FontAwesomeIcon
@@ -33,8 +35,8 @@ export default function Hero() {
                 size="2x"
               />
             </div>
-          </button>
-          <button  className={stylesHero.btnTwo} type="button">
+          </Link>
+          <Link href="/reservar-cita"  className={stylesHero.btnTwo}>
             agendar cita
             <div className={stylesHero.iBtn}>
               <FontAwesomeIcon
@@ -43,7 +45,7 @@ export default function Hero() {
                 size="2x"
               />
             </div>
-          </button>
+          </Link>
         </div>
       </div>
       <section className={stylesHero.socialChannels}>
@@ -71,10 +73,11 @@ export default function Hero() {
       </section>
       <section className={stylesHero.bgImage}>
         <span></span>
-        <img
+        <Image
           src="/images/ker-pic.png"
           className={stylesHero.bg}
           alt="kerby-coach"
+          fill={true}
         />
       </section>
       <div className={stylesHero.blurYellow}></div>

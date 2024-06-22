@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { gsap } from "gsap";
 import stylesServices from "./services.module.css";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,6 +13,59 @@ import {
 export default function Services() {
   const [showDetails, setShowDetails] = useState(true);
   const [showDetailsTwo, setShowDetailsTwo] = useState(true);
+
+  const containerRef = useRef(null);
+  const leftDivRef = useRef(null);
+  const rightDivRef = useRef(null);
+
+  useEffect(() => {
+    const leftDiv = leftDivRef.current;
+    const rightDiv = rightDivRef.current;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          gsap.to(leftDiv, {
+            opacity: 1,
+            x: 0,
+            duration: 7,
+            ease: "power4.out",
+          });
+          gsap.to(rightDiv, {
+            opacity: 1,
+            x: 0,
+            duration: 7,
+            ease: "power4.out",
+          });
+        } else {
+          gsap.to(leftDiv, {
+            opacity: 0,
+            x: -100,
+            duration: 7,
+            ease: "power4.out",
+          });
+          gsap.to(rightDiv, {
+            opacity: 0,
+            x: 100,
+            duration: 7,
+            ease: "power4.out",
+          });
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => {
+      if (containerRef.current) {
+        observer.unobserve(containerRef.current);
+      }
+    };
+  }, []);
+
 
   return (
     <section className={stylesServices.firstSection}>
@@ -27,8 +81,8 @@ export default function Services() {
           Alcanza tu objetivo físico en <span>tiempo record</span>
         </p>
       </section>
-      <section className={stylesServices.secTwo}>
-        <section className={stylesServices.serviceItem}>
+      <section ref={containerRef} className={stylesServices.secTwo}>
+        <section ref={leftDivRef} className={stylesServices.serviceItem}>
           {showDetails ? (
             <div className={stylesServices.contState}>
               <div className={stylesServices.detailsItem}>
@@ -117,7 +171,7 @@ export default function Services() {
             className={stylesServices.img}
           />
         </section>
-        <section className={stylesServices.serviceItem}>
+        <section ref={rightDivRef} className={stylesServices.serviceItem}>
           {showDetailsTwo ? (
             <div className={stylesServices.contState}>
               <div className={stylesServices.detailsItem}>
