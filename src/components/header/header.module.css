@@ -1,87 +1,164 @@
-.header{
-    width: 95%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    position: absolute;
-    top: 35px;
-    z-index: 1;
-    animation: 2.8s ease-in-out bg;
+.header {
+  width: 95%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: absolute;
+  top: 35px;
+  z-index: 1;
+  animation: 2.8s ease-in-out bg;
 }
-
 
 @keyframes bg {
-    0%{
-        transform: translateY(-150%);
-    }
-    45%{
-        transform: translateY(-150%);
-    }
-    75%{
-        transform: translateY(-150%);
-    }
-    100%{
-        transform: translateY(0%);
-    }
+  0% {
+    transform: translateY(-150%);
+  }
+  45% {
+    transform: translateY(-150%);
+  }
+  75% {
+    transform: translateY(-150%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
-.logoKerby{
-    width: 170px;
+.logoKerby {
+  width: 170px;
+  display: block;
 }
 
-.btnMenuOn{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid yellow;
-    background-color: black;
-    cursor: pointer;
+.logoKerbyVr {
+  display: none;
 }
 
-.btnMenuOn .icon{
-    font-size: 1.3rem;
-    color: yellow;
+.logoKerbyNav {
+    display: none;
+  }
+
+.btnMenuOn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid yellow;
+  background-color: black;
+  cursor: pointer;
 }
 
-.btnMenuOn:hover{
-    background-color: yellow;
-
-    .icon{
-        color: black;
-    }
+.btnMenuOn .icon {
+  font-size: 1.3rem;
+  color: yellow;
 }
 
-.nav{
-    display: flex;
-    align-items: center;
+.btnMenuOn:hover {
+  background-color: yellow;
+
+  .icon {
+    color: black;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  border: 1px solid yellow;
+  height: 50px;
+  border-radius: 50px;
+  padding-left: 25px;
+}
+
+.nav a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: yellow;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.nav button .icon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 650px) {
+  .header {
+    width: 87%;
+    top: 20px;
+  }
+
+  .logoKerby {
+    display: none;
+  }
+
+  .logoKerbyVr {
+    width: 45px;
+    display: block;
+  }
+
+  .btnMenuOn {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .btnMenuOn .icon {
+    font-size: 1.2rem;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
     gap: 25px;
-    border: 1px solid yellow;
-    height: 50px;
-    border-radius: 50px;
-    padding-left: 25px;
-}
+    background-color: yellow;
+    border: 0px solid yellow;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+    padding-left: 30px;
+  }
 
-.nav a{
-    font-size: 0.8rem;
-    text-decoration: none;
-    color: yellow;
+  .logoKerbyNav{
+    width: 55px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .nav a {
+    font-size: 10.7vw;
+    color: black;
     text-transform: uppercase;
     letter-spacing: 1px;
-}
-
-.nav button{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: yellow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    cursor: pointer;
-}
-
-.nav button .icon{
-    font-size: 1.5rem;
+    font-family: "KerbyFont", sans-serif;
+    line-height: 1;
+  }
+  
+  .nav button {
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .nav button .icon {
+    color: yellow;
+  }
 }

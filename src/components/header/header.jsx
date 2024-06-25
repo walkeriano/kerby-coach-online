@@ -1,19 +1,32 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 import styleHeader from "./header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
-export default function Header({goUp}) {
+export default function Header({ goUp }) {
   const [openMenu, setOpenMenu] = useState(true);
 
   return (
     <header className={styleHeader.header} ref={goUp}>
-      <img
-        src="/images/logo-kerby-coach.svg"
-        alt="logo-kerby-coach"
-        className={styleHeader.logoKerby}
-      />
+      <Link href="/">
+        <Image
+          src="/images/logo-kerby-coach.svg"
+          alt="logo-kerby-coach"
+          className={styleHeader.logoKerby}
+          width={100}
+          height={70}
+        />
+        <Image
+          src="/images/logo-kerby-coach-vertical.svg"
+          alt="logo-kerby-coach"
+          className={styleHeader.logoKerbyVr}
+          width={70}
+          height={100}
+        />
+      </Link>
       {openMenu ? (
         <button
           className={styleHeader.btnMenuOn}
@@ -27,6 +40,13 @@ export default function Header({goUp}) {
         </button>
       ) : (
         <nav className={styleHeader.nav}>
+          <Image
+            src="/images/black-kerby-coach-vertical.svg"
+            alt="logo-kerby-coach"
+            className={styleHeader.logoKerbyNav}
+            width={70}
+            height={100}
+          />
           <a href="/">Asesorías</a>
           <a href="/">Recomendaciones</a>
           <a href="/">Preguntas</a>
