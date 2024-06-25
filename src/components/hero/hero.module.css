@@ -260,7 +260,6 @@
   .info {
     width: 90%;
     margin-bottom: 0px;
-    border: 1px solid red;
     gap: 30px;
   }
 
@@ -271,7 +270,6 @@
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
-    border: 1px solid red;
   }
 
   .infoTitle h1 {
@@ -294,6 +292,7 @@
 /* Estilos para versión mobile (pantallas de 480px o menos) */
 @media (max-width: 650px) {
   .sectionHero {
+    height: 110vh;
     align-items: flex-end;
     padding-bottom: 4vh;
   }
@@ -301,15 +300,13 @@
   .info {
     width: 85%;
     margin-bottom: 0px;
-    border: 1px solid red;
   }
 
   .bgImage {
-    height: 55vh;
+    height: 65vh;
     width: 100%;
-    top: 3%;
+    top: 5%;
     right: 0;
-    border: 1px solid red;
   }
 
   .bgImage .bg {
@@ -321,14 +318,12 @@
 
   .infoTitle h1 {
     font-size: 6vh;
-    border: 1px solid red;
     width: 100%;
   }
 
   .infoTitle h2 {
     width: 80%;
     font-size: 3.7vw;
-    border: 1px solid red;
   }
 
   .socialChannels {
@@ -340,7 +335,6 @@
     align-items: flex-start;
     justify-content: center;
     gap: 15px;
-    border: 1px solid red;
   }
 
   .info .btnsHero .btnFirst {
