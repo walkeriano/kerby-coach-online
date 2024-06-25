@@ -231,10 +231,6 @@
   margin-top: 40px;
 }
 
-.detailsItem img {
-  width: 17px;
-}
-
 .infoLeft {
   display: flex;
   align-items: flex-start;
@@ -505,7 +501,7 @@
 
   .detailsItem {
     width: 93%;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .btnServiceLeft {
@@ -584,4 +580,142 @@
   .buyBtnRight .boxIcon .icon {
     font-size: 1rem;
   }
+  
+  .infoLeft h3,
+  .infoRight h3 {
+    font-size: 4.7vw;
+    line-height: 1;
+  }
+  
+  .infoLeft p,
+  .infoRight p {
+    font-size: 1.1rem;
+  }
+}
+
+
+@media (max-width: 650px){
+
+  .secOne {
+    width: 100%;
+  }
+
+  .secOne h2 {
+    font-size: 12vw;
+    width: 80%;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .secOne p {
+    width: 70%;
+    text-align: center;
+    font-size: 4.5vw;
+  }
+
+  .secTwo {
+    width: 100%;
+    height: 110vh;
+  }
+
+  .serviceItem {
+    width: 100%;
+    height: 50%;
+  }
+
+  .serviceItem .img {
+    border-radius: 30px;
+    object-position: top 0px right 5%;
+    transform: scaleX(-1);
+  }
+
+  .secTwo .serviceItem:last-child .img {
+    border-radius: 35px;
+    object-position: top 0px left -78px;
+    transform: scaleX(1);
+  }
+
+
+  .detailsItem {
+    width: 85%;
+    margin-top: 30px;
+  }
+
+
+  .infoLeft h3,
+  .infoRight h3 {
+    font-size: 8.5vw;
+    line-height: 1;
+  }
+  
+  .infoLeft p,
+  .infoRight p {
+    font-size: 1rem;
+    width: 50%;
+    line-height: 1.2;
+  }
+
+  .buyBtn {
+    bottom: 25px;
+    left: 20px;
+    right: auto;
+  }
+
+  .buyBtnRight {
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    left: auto;
+  }
+
+  .btnServiceLeft {
+    width: 85%;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+
+  .btnServiceRight {
+    margin-bottom: 30px;
+    width: 85%;
+    gap: 20px;
+  }
+
+  .newState,
+  .newStateRight {
+    justify-content: flex-start;
+    gap: 13%;
+  }
+
+  .infoLeftState {
+    gap: 10px;
+    width: 75%;
+  }
+
+  .infoRightState {
+    width: 75%;
+    gap: 10px;
+  }
+
+  .infoLeftState h3,
+  .infoRightState h3 {
+    font-size: 8vw;
+    line-height: 1;
+  }
+
+  .infoLeftState p,
+  .infoRightState p {
+    font-size: 1.1rem;
+    width: 100%;
+    letter-spacing: 0.5px;
+  }
+  
+  .detail p {
+    font-size: 7vw;
+    line-height: 1;
+  }
+
+  .detail img {
+    width: 45px;
+  }
+
 }

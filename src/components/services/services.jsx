@@ -67,14 +67,14 @@ export default function Services() {
     };
   }, []);
 
-
+  
   return (
     <section className={stylesServices.firstSection}>
       <section className={stylesServices.secOne}>
         <h2>
-          + plan de alimentación,
+          + plan de alimentación
           <br />
-          + rutinas personalizadas,
+          + rutinas personalizadas
           <br />
           <span>+ mentoría & mindset</span>
         </h2>
@@ -91,7 +91,6 @@ export default function Services() {
                   <h3>Asesoría regular</h3>
                   <p>Objetivo fitness, estilo de vido y/o vida saludable.</p>
                 </div>
-                
               </div>
               <div className={stylesServices.btnServiceLeft}>
                 <button onClick={() => setShowDetails(false)}>
