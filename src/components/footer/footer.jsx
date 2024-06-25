@@ -1,4 +1,5 @@
 import stylesFooter from "./footer.module.css";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -7,21 +8,26 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
-export default function Footer({goUp}) {
+export default function Footer({ goUp }) {
   const scrollUp = () => {
-    goUp.current.scrollIntoView({behavior: 'smooth'  });
+    goUp.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <section className={stylesFooter.footer}>
-        <button onClick={scrollUp}>
-            <FontAwesomeIcon icon={faChevronUp} size="2x" className={stylesFooter.icon} />
-        </button>
+      <button onClick={scrollUp}>
+        <FontAwesomeIcon
+          icon={faChevronUp}
+          size="2x"
+          className={stylesFooter.icon}
+        />
+      </button>
       <section className={stylesFooter.leftFooter}>
-        <img
+        <Image
           src="/images/logo-kerby-coach.svg"
           alt="logo-kb"
-          className={stylesFooter.img}
+          width={180}
+          height={55}
         />
         <p>
           Copyright 2024
