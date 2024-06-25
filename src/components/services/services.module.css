@@ -6,7 +6,6 @@
   justify-content: center;
   gap: 150px;
   margin-bottom: 100px;
-  clip-path: inset(0);
 }
 
 .secOne {
@@ -44,7 +43,7 @@
   cursor: pointer;
 }
 
-.secOne p span:hover{
+.secOne p span:hover {
   color: yellow;
   border-bottom: 1px solid yellow;
 }
@@ -56,7 +55,6 @@
   align-items: center;
   justify-content: center;
   gap: 35px;
-  clip-path: inset(0);
 }
 
 .serviceItem {
@@ -93,12 +91,13 @@
     border-bottom: 1px solid yellow;
   }
 
-  .infoLeft h3, .infoLeft p {
+  .infoLeft h3,
+  .infoLeft p {
     color: yellow;
   }
 }
 
-.serviceItem:last-child:hover{
+.serviceItem:last-child:hover {
   .img {
     border-top: 1px solid yellow;
     border-left: 1px solid yellow;
@@ -106,10 +105,10 @@
     border-right: 1px solid transparent;
   }
 
-  .infoRight h3, .infoRight p {
+  .infoRight h3,
+  .infoRight p {
     color: yellow;
   }
-
 }
 
 .contState {
@@ -121,8 +120,9 @@
   justify-content: space-between;
 }
 
-.newState, .newStateRight {
-  position: relative;         
+.newState,
+.newStateRight {
+  position: relative;
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 0, 0.672);
@@ -133,11 +133,11 @@
   border-radius: 0px 45px 45px 0px;
 }
 
-.newStateRight{
+.newStateRight {
   border-radius: 45px 0px 0px 45px;
 }
 
-.buyBtn{
+.buyBtn {
   position: absolute;
   bottom: -110px;
   left: 5%;
@@ -157,7 +157,7 @@
   cursor: pointer;
 }
 
-.buyBtn .boxIcon{
+.buyBtn .boxIcon {
   width: 50px;
   height: 50px;
   display: flex;
@@ -167,20 +167,20 @@
   border-radius: 50%;
 }
 
-.buyBtn .boxIcon .icon{
+.buyBtn .boxIcon .icon {
   font-size: 1.3rem;
   color: white;
 }
 
-.buyBtn:hover{
+.buyBtn:hover {
   background-color: yellow;
 
-  .icon{
+  .icon {
     color: yellow;
   }
 }
 
-.buyBtnRight{
+.buyBtnRight {
   position: absolute;
   bottom: -110px;
   right: 5%;
@@ -200,7 +200,7 @@
   cursor: pointer;
 }
 
-.buyBtnRight .boxIcon{
+.buyBtnRight .boxIcon {
   width: 50px;
   height: 50px;
   display: flex;
@@ -210,15 +210,15 @@
   border-radius: 50%;
 }
 
-.buyBtnRight .boxIcon .icon{
+.buyBtnRight .boxIcon .icon {
   font-size: 1.3rem;
   color: white;
 }
 
-.buyBtnRight:hover{
+.buyBtnRight:hover {
   background-color: yellow;
 
-  .icon{
+  .icon {
     color: yellow;
   }
 }
@@ -286,7 +286,6 @@
   width: 65%;
   letter-spacing: 1px;
   line-height: 1.4;
- 
 }
 
 .btnCloseService {
@@ -346,7 +345,7 @@
   padding: 10px 10px 10px 25px;
   border-radius: 50px;
   text-transform: uppercase;
-  font-size: 1.0rem;
+  font-size: 1rem;
   letter-spacing: 1.5px;
   background-color: rgba(0, 0, 0, 0.259);
   backdrop-filter: blur(4px);
@@ -425,7 +424,7 @@
   padding: 10px 25px 10px 10px;
   border-radius: 50px;
   text-transform: uppercase;
-  font-size: 1.0rem;
+  font-size: 1rem;
   letter-spacing: 1.5px;
   background-color: rgba(0, 0, 0, 0.259);
   backdrop-filter: blur(4px);
@@ -460,5 +459,129 @@
 
   .icon {
     color: yellow;
+  }
+}
+
+@media (max-width: 1030px) {
+  .firstSection {
+    gap: 80px;
+  }
+
+  .secOne h2 {
+    font-size: 7.6vw;
+  }
+
+  .secOne p {
+    font-size: 2.3vw;
+  }
+
+  .secTwo {
+    width: 100%;
+    height: 85vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+  }
+
+  .serviceItem {
+    width: 85%;
+    height: 50%;
+  }
+
+  .serviceItem .img {
+    border-radius: 35px;
+    object-position: top;
+  }
+
+  .secTwo .serviceItem:last-child .img {
+    border-radius: 35px;
+  }
+
+  .newState,
+  .newStateRight {
+    border-radius: 35px;
+  }
+
+  .detailsItem {
+    width: 93%;
+    margin-top: 20px;
+  }
+
+  .btnServiceLeft {
+    width: 93%;
+    margin-bottom: 25px;
+    gap: 10px;
+  }
+
+  .btnServiceRight {
+    margin-bottom: 25px;
+  }
+  
+  .detail p {
+    font-size: 4vw;
+    line-height: 1;
+  }
+
+  .detail img {
+    width: 33px;
+  }
+
+  .infoLeftState {
+    gap: 0px;
+  }
+
+  .infoLeftState h3,
+  .infoRightState h3 {
+    font-size: 3.8vw;
+  }
+
+  .infoLeftState p,
+  .infoRightState p {
+    font-size: 1rem;
+  }
+
+  .btnCloseService {
+    width: 40px;
+    height: 40px;
+  }
+
+  .buyBtn {
+    position: absolute;
+    bottom: 25px;
+    left: auto;
+    right: 25px;
+    font-size: 1rem;
+    padding: 5px 5px 5px 15px;
+    color: black;
+    gap: 15px;
+  }
+
+  .buyBtn .boxIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .buyBtn .boxIcon .icon {
+    font-size: 1rem;
+  }
+
+  .buyBtnRight {
+    position: absolute;
+    bottom: 25px;
+    right: auto;
+    left: 25px;
+    font-size: 1rem;
+    padding: 5px 15px 5px 5px;
+    gap: 15px;
+  }
+
+  .buyBtnRight .boxIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .buyBtnRight .boxIcon .icon {
+    font-size: 1rem;
   }
 }

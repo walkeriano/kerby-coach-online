@@ -61,6 +61,7 @@ export default function Services() {
 
     return () => {
       if (containerRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         observer.unobserve(containerRef.current);
       }
     };
@@ -110,7 +111,7 @@ export default function Services() {
               <div className={stylesServices.detailsItem}>
                 <div className={stylesServices.infoLeftState}>
                   <h3>Asesoría regular</h3>
-                  <p>Objetivo fitness, estilo de vido y/o vida saludable.</p>
+                  <p>Objetivo fitness, estilo de vida y/o vida saludable.</p>
                 </div>
                 <button
                   onClick={() => setShowDetails(true)}
@@ -153,7 +154,7 @@ export default function Services() {
                 </div>
               </div>
               <button className={stylesServices.buyBtn}>
-                comenzar ahora
+                comenzar
                 <div className={stylesServices.boxIcon}>
                   <FontAwesomeIcon
                     icon={faCartShopping}
@@ -239,7 +240,7 @@ export default function Services() {
                     className={stylesServices.icon}
                   />
                 </div>
-                comenzar ahora
+                comenzar
               </button>
             </div>
           )}

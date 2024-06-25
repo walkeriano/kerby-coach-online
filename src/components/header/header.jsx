@@ -5,6 +5,11 @@ import Link from "next/link";
 import styleHeader from "./header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faInstagram,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Header({ goUp }) {
   const [openMenu, setOpenMenu] = useState(true);
@@ -57,6 +62,30 @@ export default function Header({ goUp }) {
               size="2x"
             />
           </button>
+
+          <section className={styleHeader.socialChannels}>
+            <a href="/">
+              <FontAwesomeIcon
+                className={styleHeader.icon}
+                icon={faFacebookF}
+                size="2x"
+              />
+            </a>
+            <a href="/">
+              <FontAwesomeIcon
+                className={styleHeader.icon}
+                icon={faInstagram}
+                size="2x"
+              />
+            </a>
+            <a href="/">
+              <FontAwesomeIcon
+                className={styleHeader.icon}
+                icon={faTiktok}
+                size="2x"
+              />
+            </a>
+          </section>
         </nav>
       )}
     </header>

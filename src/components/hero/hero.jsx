@@ -78,6 +78,7 @@ export default function Hero() {
           className={stylesHero.bg}
           alt="kerby-coach"
           fill={true}
+          priority={true}
         />
       </section>
       <div className={stylesHero.blurYellow}></div>
