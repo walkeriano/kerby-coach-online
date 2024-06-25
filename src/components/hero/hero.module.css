@@ -1,253 +1,364 @@
-.sectionHero{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-
+.sectionHero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  clip-path: inset(0);
 }
 
-.info{
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 60px;
-    color: white;
-    margin-bottom: -100px;
-    animation: 2s ease-in-out intro;
+.info {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+  color: white;
+  margin-bottom: -100px;
+  animation: 2s ease-in-out intro;
 }
 
 @keyframes intro {
-    0%{
-        transform: translateX(-10%);
-    }
-    100%{
-        transform: translateX(0%);
-    }
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
-.infoTitle{
+.infoTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.infoTitle h1 {
+  width: 70%;
+  font-size: 5vw;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "KerbyFont", sans-serif;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.infoTitle h1 span {
+  color: yellow;
+}
+
+.infoTitle h2 {
+  width: 40%;
+  font-size: 1.1rem;
+  color: grey;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.btnsHero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.info .btnsHero .btnFirst {
+  border: 1px solid yellow;
+  background-color: yellow;
+  color: black;
+  font-size: 0.9rem;
+  padding: 10px 10px 10px 30px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.info .btnsHero .btnFirst .iBtn {
+  background-color: black;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info .btnsHero .btnFirst .iBtn .icon {
+  color: yellow;
+  font-size: 1.2rem;
+  transform: rotate(-45deg);
+}
+
+.info .btnsHero .btnFirst:hover {
+  background-color: black;
+  color: yellow;
+
+  .iBtn {
+    background-color: yellow;
+  }
+
+  .icon {
+    color: black;
+  }
+}
+
+.info .btnsHero .btnTwo {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  font-size: 0.9rem;
+  padding: 10px 10px 10px 30px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.info .btnsHero .btnTwo .iBtn {
+  background-color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info .btnsHero .btnTwo .iBtn .icon {
+  color: black;
+  font-size: 1.2rem;
+  transform: rotate(-45deg);
+}
+
+.info .btnsHero .btnTwo:hover {
+  background-color: white;
+  color: black;
+
+  .iBtn {
+    background-color: black;
+  }
+
+  .icon {
+    color: white;
+  }
+}
+
+.socialChannels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.socialChannels a {
+  border: 1px solid transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialChannels a .icon {
+  font-size: 1.5rem;
+  color: grey;
+}
+
+.socialChannels a:hover {
+  border: 1px solid yellow;
+
+  .icon {
+    color: yellow;
+  }
+}
+
+.bgImage {
+  height: 80vh;
+  width: 550px;
+  position: absolute;
+  z-index: -1;
+  right: 15%;
+  animation: 2s ease-in-out bg;
+}
+
+@keyframes bg {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.bgImage .bg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bgImage span {
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  bottom: 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0), black);
+  z-index: 1;
+}
+
+.blurYellow {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  z-index: -2;
+  width: 80%;
+  height: 40vh;
+  background-image: radial-gradient(closest-side, rgb(41, 41, 41), black);
+  animation: 2s ease-in-out infinite move;
+}
+
+@keyframes move {
+  0% {
+    width: 110%;
+  }
+  50% {
+    width: 80%;
+  }
+  100% {
+    width: 110%;
+  }
+}
+
+/* Estilos para versión tablet (pantallas de 768px o menos) */
+@media (max-width: 1030px) {
+  .sectionHero {
+    align-items: flex-end;
+    padding-bottom: 7vh;
+  }
+
+  .info {
+    width: 90%;
+    margin-bottom: 0px;
+    border: 1px solid red;
+    gap: 30px;
+  }
+
+  .infoTitle {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
+    border: 1px solid red;
+  }
+
+  .infoTitle h1 {
+    font-size: 6.7vw;
+  }
+
+  .infoTitle h2 {
+    width: 60%;
+    font-size: 2.7vw;
+  }
+
+  .bgImage {
+    height: 67vh;
+    width: 470px;
+    top: 5%;
+    right: 20%;
+  }
 }
 
-.info h1{
-    width: 70%;
-    font-size: 5vw;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-family: 'KerbyFont', sans-serif;
-    font-weight: 300;
-    line-height: 1;
-}
+/* Estilos para versión mobile (pantallas de 480px o menos) */
+@media (max-width: 650px) {
+  .sectionHero {
+    align-items: flex-end;
+    padding-bottom: 4vh;
+  }
 
-.info h1 span{
-    color: yellow;
-}
+  .info {
+    width: 85%;
+    margin-bottom: 0px;
+    border: 1px solid red;
+  }
 
-.info h2{
-    width: 40%;
-    font-size: 1.1rem;
-    color: grey;
-    font-weight: 400;
-    letter-spacing: 1px;
-    line-height: 1.4;
-}
+  .bgImage {
+    height: 55vh;
+    width: 100%;
+    top: 3%;
+    right: 0;
+    border: 1px solid red;
+  }
 
-.btnsHero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
-
-.info .btnsHero .btnFirst{
-    border: 1px solid yellow;
-    background-color: yellow;
-    color: black;
-    font-size: 0.9rem;
-    padding: 10px 10px 10px 30px;
-    border-radius: 50px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.info .btnsHero .btnFirst .iBtn{
-    background-color: black;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.info .btnsHero .btnFirst .iBtn .icon{
-    color: yellow;
-    font-size: 1.2rem;
-    transform: rotate(-45deg);
-}
-
-.info .btnsHero .btnFirst:hover{
-    background-color: black;
-    color: yellow;
-
-    .iBtn{
-        background-color: yellow;
-    }
-    
-    .icon{
-        color: black;
-    }
-}
-
-.info .btnsHero .btnTwo{
-    border: 1px solid white;
-    background-color: black;
-    color: white;
-    font-size: 0.9rem;
-    padding: 10px 10px 10px 30px;
-    border-radius: 50px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.info .btnsHero .btnTwo .iBtn{
-    background-color: white;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.info .btnsHero .btnTwo .iBtn .icon{
-    color: black;
-    font-size: 1.2rem;
-    transform: rotate(-45deg);
-}
-
-.info .btnsHero .btnTwo:hover{
-    background-color: white;
-    color: black;
-
-    .iBtn{
-        background-color: black;
-    }
-    
-    .icon{
-        color: white;
-    }
-}
-
-.socialChannels{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
-}
-
-.socialChannels a{
-    border: 1px solid transparent;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.socialChannels a .icon{
-    font-size: 1.5rem;
-    color: grey;
-} 
-
-.socialChannels a:hover{
-    border: 1px solid yellow;
-
-    .icon{
-        color:yellow;
-    }
-}
-
-.bgImage{
-    height: 77vh;
-    width: 500px;
-    position: absolute;
-    z-index: -1;
-    right: 17%;
-    animation: 2s ease-in-out bg;
-}
-
-
-@keyframes bg {
-    0%{
-        transform: translateX(10%);
-    }
-    100%{
-        transform: translateX(0%);
-    }
-}
-
-.bgImage .bg{
+  .bgImage .bg {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-}
+    object-fit: cover;
+    object-position: top;
+  }
 
-.bgImage span{
+  .infoTitle h1 {
+    font-size: 6vh;
+    border: 1px solid red;
     width: 100%;
-    height: 40%;
-    position: absolute;
-    bottom: 0px;
-    background: linear-gradient(rgba(0, 0, 0, 0), black);
-    z-index: 1;
-}
+  }
 
-.blurYellow{
-    position: absolute;
-    right: 0;
-    top: 20%;
-    z-index: -2;
+  .infoTitle h2 {
     width: 80%;
-    height: 40vh;
-    background-image: radial-gradient(closest-side, rgb(74, 74, 74),black);
-    animation: 2s ease-in-out infinite move;
-}
+    font-size: 3.7vw;
+    border: 1px solid red;
+  }
 
+  .socialChannels {
+    display: none;
+  }
 
-@keyframes move {
-    0%{
-        width: 110%;
-    }
-    50%{
-        width: 80%;
-    }
-    100%{
-        width: 110%;
-    }
+  .btnsHero {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    border: 1px solid red;
+  }
+
+  .info .btnsHero .btnFirst {
+    padding: 5px 5px 5px 15px;
+    gap: 10px;
+  }
+
+  .info .btnsHero .btnFirst .iBtn .icon {
+    font-size: 1.1rem;
+  }
+
+  .info .btnsHero .btnTwo {
+    padding: 5px 5px 5px 15px;
+    border-radius: 50px;
+    gap: 15px;
+  }
+
+  .info .btnsHero .btnTwo .iBtn .icon {
+    font-size: 1.1rem;
+  }
 }

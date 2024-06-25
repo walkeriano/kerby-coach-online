@@ -7,8 +7,8 @@ export default function BannerMeet() {
   return (
     <section className={stylesBannerMeet.bannerSection}>
       <div className={stylesBannerMeet.infoBanner}>
-        <h2>cita privada exclusiva</h2>
-        <p>Resolvamos juntos dudas y consultas</p>
+        <h2>asesoría exclusiva</h2>
+        <p>Cita privada con el coach</p>
       </div>
       <button>
         Elegir fecha
@@ -28,8 +28,8 @@ export default function BannerMeet() {
           className={stylesBannerMeet.img}
         />
       </div>
-      <span className={stylesBannerMeet.degrad} ></span>
-      <span className={stylesBannerMeet.degradTwo} ></span>
+      <span className={stylesBannerMeet.degrad}></span>
+      <span className={stylesBannerMeet.degradTwo}></span>
       <span className={stylesBannerMeet.whiteLight}></span>
       <span className={stylesBannerMeet.whiteLightTwo}></span>
       <Image

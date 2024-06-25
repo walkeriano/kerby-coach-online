@@ -12,6 +12,7 @@ export default function AsesoriaRegular() {
   return (
     <>
       <Head>
+      <meta charSet="UTF-8" />
         <title>Asesoria Regular - Kerby Coach</title>
         <meta
           name="description"

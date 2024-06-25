@@ -94,7 +94,7 @@ export default function Services() {
               </div>
               <div className={stylesServices.btnServiceLeft}>
                 <button onClick={() => setShowDetails(false)}>
-                  ver detalles
+                  más detalles
                   <div className={stylesServices.boxIcon}>
                     <FontAwesomeIcon
                       className={stylesServices.icon}
@@ -153,7 +153,7 @@ export default function Services() {
                 </div>
               </div>
               <button className={stylesServices.buyBtn}>
-                reservar
+                comenzar ahora
                 <div className={stylesServices.boxIcon}>
                   <FontAwesomeIcon
                     icon={faCartShopping}
@@ -189,7 +189,7 @@ export default function Services() {
                       size="2x"
                     />
                   </div>
-                  ver detalles
+                  más detalles
                 </button>
               </div>
             </div>
@@ -239,7 +239,7 @@ export default function Services() {
                     className={stylesServices.icon}
                   />
                 </div>
-                adquirir
+                comenzar ahora
               </button>
             </div>
           )}

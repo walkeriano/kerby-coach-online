@@ -9,18 +9,18 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function FormRegular() {
+export default function FormCompeticion() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [progress, setProgress] = useState(0);
   const formRef = useRef(null);
+  const [competicion, setCompeticion] = useState(false);
+  const [fecha, setFecha] = useState(false);
+  const [farmacologia, setFarmacologia] = useState(false);
   const [suplement, setSuplement] = useState(false);
   const [farmaco, setFarmaco] = useState(false);
   const [cardio, setCardio] = useState(false);
-  const [sport, setSport] = useState(false);
   const [medico, setMedico] = useState(false);
   const [alergia, setAlergia] = useState(false);
-  const [intolerante, setIntolerante] = useState(false);
-  const [food, setFood] = useState(false);
   const [lesion, setLesion] = useState(false);
 
   const scrollToQuestion = (index) => {
@@ -61,7 +61,7 @@ export default function FormRegular() {
       <form ref={formRef} className={stylesAsesoria.formContainer}>
         <div className={stylesAsesoria.question}>
           <section className={stylesAsesoria.title}>
-            <p>Solicitud de Asesoría regular</p>
+            <p>Solicitud de Asesoría para competición</p>
             <h2>Datos personales</h2>
           </section>
           <section className={stylesAsesoria.contInputs}>
@@ -103,7 +103,7 @@ export default function FormRegular() {
         </div>
         <div className={stylesAsesoria.question}>
           <section className={stylesAsesoria.title}>
-            <p>Solicitud de Asesoría regular</p>
+          <p>Solicitud de Asesoría para competición</p>
             <h2>¿Cuál es tu edad?</h2>
           </section>
           <section className={stylesAsesoria.contInputs}>
@@ -149,7 +149,7 @@ export default function FormRegular() {
         </div>
         <div className={stylesAsesoria.question}>
           <section className={stylesAsesoria.title}>
-            <p>Solicitud de Asesoría regular</p>
+          <p>Solicitud de Asesoría para competición</p>
             <h2>Especifica tu peso y altura</h2>
           </section>
           <section className={stylesAsesoria.contInputs}>
@@ -173,73 +173,81 @@ export default function FormRegular() {
         </div>
         <div className={stylesAsesoria.question}>
           <section className={stylesAsesoria.title}>
-            <p>Solicitud de Asesoría regular</p>
-            <h2>¿Cuál es tu objetivo físico?</h2>
+          <p>Solicitud de Asesoría para competición</p>
+            <h2>¿Has competido anteriormente?</h2>
           </section>
           <section className={stylesAsesoria.contInputs}>
-            <label
-              href="radioObjetive"
-              className={stylesAsesoria.boxInputRadio}
+            <div
+              onClick={() => setCompeticion(true)}
+              className={stylesAsesoria.boxConditional}
             >
-              <p>Masa muscular</p>
-              <input
-                type="radio"
-                id="radioObjetive"
-                placeholder="Escribir aqui..."
-                className={stylesAsesoria.input}
-              />
-              <span></span>
-              <Image
-                src="/images/banner-one.jpg"
-                alt="banner-objetivo-fitness"
-                fill={true}
-                className={stylesAsesoria.img}
-              />
-            </label>
-            <label
-              href="radioObjetive"
-              className={stylesAsesoria.boxInputRadio}
-            >
-              <p>Definición</p>
-              <input
-                type="radio"
-                id="radioObjetive"
-                placeholder="Escribir aqui..."
-                className={stylesAsesoria.input}
-              />
-              <span></span>
-              <Image
-                src="/images/banner-one.jpg"
-                alt="banner-objetivo-fitness"
-                fill={true}
-                className={stylesAsesoria.img}
-              />
-            </label>
-            <label
-              href="radioObjetive"
-              className={stylesAsesoria.boxInputRadio}
-            >
-              <p>Recomposición corporal</p>
-              <input
-                type="radio"
-                id="radioObjetive"
-                placeholder="Escribir aqui..."
-                className={stylesAsesoria.input}
-              />
-              <span></span>
-              <Image
-                src="/images/banner-one.jpg"
-                alt="banner-objetivo-fitness"
-                fill={true}
-                className={stylesAsesoria.img}
-              />
-            </label>
+              <p>Claro que si! &#128077;</p>
+            </div>
+            <div className={stylesAsesoria.boxConditional}>
+              <p>No, nunca &#128683;</p>
+            </div>
+            {competicion && (
+              <section className={stylesAsesoria.allExtras}>
+                <div className={stylesAsesoria.inputExtraTwo}>
+                  <p>¿En qué categoría?</p>
+                  <input
+                    type="text"
+                    placeholder="Escribir aquí..."
+                    className={stylesAsesoria.input}
+                  />
+                  <button onClick={() => setCompeticion(false)}>
+                    <FontAwesomeIcon icon={faXmark} size="1x" />
+                  </button>
+                </div>
+                <div className={stylesAsesoria.inputExtraTwo}>
+                  <p>¿Cuántas veces?</p>
+                  <input
+                    type="text"
+                    placeholder="Escribir aquí..."
+                    className={stylesAsesoria.input}
+                  />
+                  <button onClick={() => setCompeticion(false)}>
+                    <FontAwesomeIcon icon={faXmark} size="1x" />
+                  </button>
+                </div>
+              </section>
+            )}
           </section>
         </div>
         <div className={stylesAsesoria.question}>
           <section className={stylesAsesoria.title}>
-            <p>Solicitud de Asesoría regular</p>
-            <h2>¿Cuántas veces al día comes?</h2>
+          <p>Solicitud de Asesoría para competición</p>
+            <h2>¿Piensas competir pronto?</h2>
+          </section>
+          <section className={stylesAsesoria.contInputs}>
+            <div
+              onClick={() => setFecha(true)}
+              className={stylesAsesoria.boxConditional}
+            >
+              <p>Claro que si! &#128077;</p>
+            </div>
+            <div className={stylesAsesoria.boxConditional}>
+              <p>En el futuro &#128170;</p>
+            </div>
+            {fecha && (
+              <div className={stylesAsesoria.inputExtra}>
+                <p>¿Cuándo?</p>
+                <input
+                  type="text"
+                  placeholder="Escribir aquí..."
+                  className={stylesAsesoria.input}
+                />
+                <button onClick={() => setFecha(false)}>
+                  <FontAwesomeIcon icon={faXmark} size="1x" />
+                </button>
+              </div>
+            )}
+          </section>
+        </div>
+        <div className={stylesAsesoria.question}>
+          <section className={stylesAsesoria.title}>
+          <p>Solicitud de Asesoría para competición</p>
+            <h2>¿Cuántas veces al día comes? plan nutricional</h2>
           </section>
           <section className={stylesAsesoria.contInputsVcl}>
             <label htmlFor="inpComida" className={stylesAsesoria.boxInputHzl}>
@@ -273,7 +281,7 @@ export default function FormRegular() {
         </div>
         <div className={stylesAsesoria.question}>
           <section className={stylesAsesoria.title}>
-            <p>Solicitud de Asesoría regular</p>
+          <p>Solicitud de Asesoría para competición</p>
             <h2>¿Utilizas suplementos?</h2>
           </section>
           <section className={stylesAsesoria.contInputs}>
@@ -303,7 +311,7 @@ export default function FormRegular() {
         </div>
         <div className={stylesAsesoria.question}>
           <section className={stylesAsesoria.title}>
-            <p>Registro de solicitud</p>
+            <p>Solicitud de Asesoría para competición</p>
             <h2>¿Has consumido fármacos deportivos?</h2>
           </section>
           <section className={stylesAsesoria.contInputs}>
@@ -333,7 +341,37 @@ export default function FormRegular() {
         </div>
         <div className={stylesAsesoria.question}>
           <section className={stylesAsesoria.title}>
-            <p>Solicitud de Asesoría regular</p>
+          <p>Solicitud de Asesoría para competición</p>
+            <h2>¿Actualmente utilizas framacología?</h2>
+          </section>
+          <section className={stylesAsesoria.contInputs}>
+            <div
+              onClick={() => setFarmacologia(true)}
+              className={stylesAsesoria.boxConditional}
+            >
+              <p>Claro que si! &#128077;</p>
+            </div>
+            <div className={stylesAsesoria.boxConditional}>
+              <p>No, nunca &#128683;</p>
+            </div>
+            {farmacologia && (
+              <div className={stylesAsesoria.inputExtra}>
+                <p>¿Cuáles?</p>
+                <input
+                  type="text"
+                  placeholder="Escribir aquí..."
+                  className={stylesAsesoria.input}
+                />
+                <button onClick={() => setFarmacologia(false)}>
+                  <FontAwesomeIcon icon={faXmark} size="1x" />
+                </button>
+              </div>
+            )}
+          </section>
+        </div>
+        <div className={stylesAsesoria.question}>
+          <section className={stylesAsesoria.title}>
+          <p>Solicitud de Asesoría para competición</p>
             <h2>¿Entrenas frecuentemente?</h2>
           </section>
           <section className={stylesAsesoria.contInputsVcl}>
@@ -368,7 +406,7 @@ export default function FormRegular() {
         </div>
         <div className={stylesAsesoria.question}>
           <section className={stylesAsesoria.title}>
-            <p>Solicitud de Asesoría regular</p>
+          <p>Solicitud de Asesoría para competición</p>
             <h2>¿Sueles hacer ejercicios cardiovasculares?</h2>
           </section>
           <section className={stylesAsesoria.contInputs}>
@@ -398,37 +436,7 @@ export default function FormRegular() {
         </div>
         <div className={stylesAsesoria.question}>
           <section className={stylesAsesoria.title}>
-            <p>Solicitud de Asesoría regular</p>
-            <h2>¿Prácticas otro deporte aparte del gym?</h2>
-          </section>
-          <section className={stylesAsesoria.contInputs}>
-            <div
-              onClick={() => setSport(true)}
-              className={stylesAsesoria.boxConditional}
-            >
-              <p>Claro que si! &#128077;</p>
-            </div>
-            <div className={stylesAsesoria.boxConditional}>
-              <p>No, nunca &#128683;</p>
-            </div>
-            {sport && (
-              <div className={stylesAsesoria.inputExtra}>
-                <p>¿Cuáles?</p>
-                <input
-                  type="text"
-                  placeholder="Escribir aquí..."
-                  className={stylesAsesoria.input}
-                />
-                <button onClick={() => setSport(false)}>
-                  <FontAwesomeIcon icon={faXmark} size="1x" />
-                </button>
-              </div>
-            )}
-          </section>
-        </div>
-        <div className={stylesAsesoria.question}>
-          <section className={stylesAsesoria.title}>
-            <p>Solicitud de Asesoría regular</p>
+          <p>Solicitud de Asesoría para competición</p>
             <h2>¿Cuántas horas sueles dormir al día?</h2>
           </section>
           <section className={stylesAsesoria.contInputsVcl}>
@@ -463,7 +471,7 @@ export default function FormRegular() {
         </div>
         <div className={stylesAsesoria.question}>
           <section className={stylesAsesoria.title}>
-            <p>Solicitud de Asesoría regular</p>
+          <p>Solicitud de Asesoría para competición</p>
             <h2>¿Tienes algún antecendente médico?</h2>
           </section>
           <section className={stylesAsesoria.contInputs}>
@@ -493,7 +501,7 @@ export default function FormRegular() {
         </div>
         <div className={stylesAsesoria.question}>
           <section className={stylesAsesoria.title}>
-            <p>Solicitud de Asesoría regular</p>
+          <p>Solicitud de Asesoría para competición</p>
             <h2>¿Sufres de alergias?</h2>
           </section>
           <section className={stylesAsesoria.contInputs}>
@@ -523,67 +531,7 @@ export default function FormRegular() {
         </div>
         <div className={stylesAsesoria.question}>
           <section className={stylesAsesoria.title}>
-            <p>Solicitud de Asesoría regular</p>
-            <h2>¿Eres intelorante a algún alimento?</h2>
-          </section>
-          <section className={stylesAsesoria.contInputs}>
-            <div
-              onClick={() => setIntolerante(true)}
-              className={stylesAsesoria.boxConditional}
-            >
-              <p>Claro que si! &#128077;</p>
-            </div>
-            <div className={stylesAsesoria.boxConditional}>
-              <p>No, nunca &#128683;</p>
-            </div>
-            {intolerante && (
-              <div className={stylesAsesoria.inputExtra}>
-                <p>¿Cuáles?</p>
-                <input
-                  type="text"
-                  placeholder="Escribir aquí..."
-                  className={stylesAsesoria.input}
-                />
-                <button onClick={() => setIntolerante(false)}>
-                  <FontAwesomeIcon icon={faXmark} size="1x" />
-                </button>
-              </div>
-            )}
-          </section>
-        </div>
-        <div className={stylesAsesoria.question}>
-          <section className={stylesAsesoria.title}>
-            <p>Solicitud de Asesoría regular</p>
-            <h2>¿Hay algún alimento no te guste?</h2>
-          </section>
-          <section className={stylesAsesoria.contInputs}>
-            <div
-              onClick={() => setFood(true)}
-              className={stylesAsesoria.boxConditional}
-            >
-              <p>Claro que si! &#128077;</p>
-            </div>
-            <div className={stylesAsesoria.boxConditional}>
-              <p>No, nunca &#128683;</p>
-            </div>
-            {food && (
-              <div className={stylesAsesoria.inputExtra}>
-                <p>¿Cuáles?</p>
-                <input
-                  type="text"
-                  placeholder="Escribir aquí..."
-                  className={stylesAsesoria.input}
-                />
-                <button onClick={() => setFood(false)}>
-                  <FontAwesomeIcon icon={faXmark} size="1x" />
-                </button>
-              </div>
-            )}
-          </section>
-        </div>
-        <div className={stylesAsesoria.question}>
-          <section className={stylesAsesoria.title}>
-            <p>Solicitud de Asesoría regular</p>
+          <p>Solicitud de Asesoría para competición</p>
             <h2>¿Tienes alguna lesión física?</h2>
           </section>
           <section className={stylesAsesoria.contInputs}>
@@ -613,7 +561,7 @@ export default function FormRegular() {
         </div>
         <div className={stylesAsesoria.question}>
           <section className={stylesAsesoria.title}>
-            <p>Solicitud de Asesoría regular</p>
+            <p>Solicitud de Asesoría para competición</p>
             <h2>Selecciona tu membresía ideal</h2>
           </section>
           <section className={stylesAsesoria.contPrices}>

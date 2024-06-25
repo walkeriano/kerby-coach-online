@@ -28,13 +28,17 @@ export default function Home() {
   return (
     <>
       <Head>
+        <meta charSet="UTF-8" />
         <title>Kerby - Coach Online</title>
-        <meta name="description" content="kerby coach online - fisicoculturismo, fitness & vida saludable" />
+        <meta
+          name="description"
+          content="kerby coach online - fisicoculturismo, fitness & vida saludable"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {loading ? (
-        <Loading/>
+        <Loading />
       ) : (
         <main className={styles.main}>
           <Header goUp={goUp} />

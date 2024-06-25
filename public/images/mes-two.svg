@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 380 266.9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_3);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre);
+      }
+
+      .cls-3 {
+        fill: url(#Degradado_sin_nombre_3-2);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre" data-name="Degradado sin nombre" x1="130.7" y1="902.6" x2="249.5" y2="902.6" gradientTransform="translate(0 -838.3)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#efa22b"/>
+      <stop offset="0" stop-color="#f7db51"/>
+      <stop offset=".3" stop-color="#ffc739"/>
+      <stop offset=".5" stop-color="#fff87b"/>
+      <stop offset=".6" stop-color="#ffc839"/>
+      <stop offset=".7" stop-color="#ffce39"/>
+      <stop offset=".8" stop-color="#ffef7b"/>
+      <stop offset="1" stop-color="#e09f26"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_3" data-name="Degradado sin nombre 3" x1="10.4" y1="1054.5" x2="369.6" y2="1054.5" gradientTransform="translate(0 -838.3)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#efa22b"/>
+      <stop offset="0" stop-color="#f7db51"/>
+      <stop offset=".3" stop-color="#ffc739"/>
+      <stop offset=".5" stop-color="#fff87b"/>
+      <stop offset=".6" stop-color="#ffc839"/>
+      <stop offset=".7" stop-color="#ffce39"/>
+      <stop offset=".8" stop-color="#ffef7b"/>
+      <stop offset="1" stop-color="#e09f26"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_3-2" data-name="Degradado sin nombre 3" y1="992.8" y2="992.8" xlink:href="#Degradado_sin_nombre_3"/>
+  </defs>
+  <path class="cls-2" d="M192.1,9.2l12.6,38.7c.3.8,1.2,1.5,2,1.5h40.7c2,0,3,2.6,1.3,3.8l-32.9,23.8c-.8.5-1,1.5-.8,2.3l12.6,38.7c.7,2-1.7,3.6-3.3,2.3l-32.9-23.8c-.8-.5-1.7-.5-2.5,0l-32.9,23.8c-1.7,1.2-3.8-.3-3.3-2.3l12.6-38.7c.3-.8,0-1.8-.8-2.3l-32.9-23.8c-1.7-1.2-.8-3.8,1.3-3.8h40.7c.8,0,1.7-.7,2-1.5l12.6-38.7c.7-2,3.3-2,4,0h.2Z"/>
+  <path class="cls-1" d="M10.4,174.4l179,47.7,180.1-47.7v28.3c0,4.5-3,8.5-7.4,9.6l-172.7,45.7L17.8,212.2c-4.4-1.2-7.4-5.1-7.4-9.6v-28.3h0Z"/>
+  <path class="cls-3" d="M10.4,112.7l179,47.7,180.1-47.7v28.3c0,4.5-3,8.5-7.4,9.6l-172.7,45.7L17.8,150.5c-4.4-1.2-7.4-5.1-7.4-9.6v-28.3h0Z"/>
+</svg>

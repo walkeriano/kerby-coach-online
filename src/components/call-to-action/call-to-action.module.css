@@ -6,6 +6,7 @@
     justify-content: center;
     position: relative;
     gap: 5%;
+    clip-path: inset(0);
 }
 
 .callToAction h4{
@@ -50,7 +51,7 @@
 .blurYellowTwo{
     position: absolute;
     z-index: -1;
-    width: 100%;
+    width: 90%;
     height: 30vh;
     background-image: radial-gradient(closest-side, rgb(53, 53, 0),rgba(0, 0, 0, 0));
     animation: 2s ease-in-out infinite move;
@@ -59,12 +60,12 @@
 
 @keyframes move {
     0%{
-        width: 110%;
+        width: 90%;
     }
     50%{
-        width: 80%;
+        width: 70%;
     }
     100%{
-        width: 110%;
+        width: 90%;
     }
 }

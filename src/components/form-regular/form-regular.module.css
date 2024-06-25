@@ -1,12 +1,13 @@
 .containerRegular {
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   color: white;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .yellowBlur {
@@ -29,7 +30,7 @@
 
 .formContainer {
   width: 100%;
-  height: 80%;
+  height: 85%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -74,14 +75,34 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  bottom: 15vh;
+  bottom: 10vh;
 }
 
-.containerRegular .contBtns button {
+.containerRegular .contBtns .btnLeft,
+.containerRegular .contBtns .btnRight {
   border: 1px solid yellow;
-  padding: 10px 15px;
-  border-radius: 50px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
   color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerRegular .contBtns .btnLeft .icon,
+.containerRegular .contBtns .btnRight .icon {
+  font-size: 1.5rem;
+}
+
+.containerRegular .contBtns .btnLeft .icon {
+  transform: rotate(180deg);
+}
+
+.containerRegular .contBtns .btnLeft:hover,
+.containerRegular .contBtns .btnRight:hover {
+  background-color: yellow;
+  color: black;
 }
 
 .formContainer .question .contInputs {
@@ -90,6 +111,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  position: relative;
 }
 
 .formContainer .question .contInputs .boxInput {
@@ -129,7 +151,7 @@
 .progressContainer {
   width: 50%;
   height: 2px;
-  background-color: grey;
+  background-color: rgb(61, 61, 61);
   border-radius: 5px;
   overflow: hidden;
 }
@@ -138,4 +160,309 @@
   height: 100%;
   background-color: yellow; /* color de la barra de progreso */
   transition: width 0.3s ease-in-out;
+}
+
+.btnFin {
+  font-size: 1rem;
+  color: black;
+  border: 1px solid yellow;
+  background-color: yellow;
+  padding: 0px 10px 0px 25px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btnFin .icon {
+  font-size: 2.3rem;
+  color: black;
+}
+
+.btnFin:hover {
+  background-color: rgb(234, 234, 0);
+}
+
+.formContainer .question .contInputs .boxInputSelect {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #212121;
+  border: 1px solid #848484;
+  width: 50%;
+  height: 80px;
+  border-radius: 10px;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.formContainer .question .contInputs .boxInputSelect p {
+  height: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  align-content: center;
+}
+
+.formContainer .question .contInputs .boxInputSelect:hover {
+  border: 1px solid yellow;
+}
+
+.formContainer .question .contInputs .boxInputRadio {
+  border: 1px solid transparent;
+  position: relative;
+  width: 35%;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+  border-radius: 12px;
+}
+
+.formContainer .question .contInputs .boxInputRadio p {
+  z-index: 2;
+  width: 100%;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+}
+
+.formContainer .question .contInputs .boxInputRadio .input {
+  z-index: 2;
+  width: 17px;
+  accent-color: yellow;
+}
+
+.formContainer .question .contInputs .boxInputRadio span {
+  width: 100%;
+  height: 35%;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.618));
+  z-index: 1;
+  bottom: 0px;
+  border-radius: 0px 0px 12px 12px;
+}
+
+.formContainer .question .contInputs .boxInputRadio .img {
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.formContainer .question .contInputs .boxInputRadio:hover {
+  border: 1px solid yellow;
+}
+
+.formContainer .question .contInputsVcl {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.formContainer .question .contInputsVcl .boxInputHzl {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #212121;
+  border: 1px solid #848484;
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.formContainer .question .contInputsVcl .boxInputHzl:hover {
+  border: 1px solid yellow;
+}
+
+.formContainer .question .contInputsVcl .boxInputHzl p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.formContainer .question .contInputsVcl .boxInputHzl .input {
+  width: 20px;
+  accent-color: yellow;
+}
+
+.formContainer .question .contInputs .boxConditional {
+  width: 190px;
+  height: 70px;
+  background-color: #212121;
+  border: 1px solid #848484;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.formContainer .question .contInputs .boxConditional:hover {
+  border: 1px solid yellow;
+}
+
+.formContainer .question .contInputs .allExtras{
+  position: absolute;
+  bottom: -110px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.formContainer .question .contInputs .inputExtraTwo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.formContainer .question .contInputs .inputExtraTwo p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.formContainer .question .contInputs .inputExtraTwo button {
+  position: absolute;
+  right: -50px;
+  bottom: 5px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.formContainer .question .contInputs .inputExtraTwo button:hover {
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+}
+
+.formContainer .question .contInputs .inputExtra {
+  position: absolute;
+  bottom: -120px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.formContainer .question .contInputs .inputExtra p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.formContainer .question .contInputs .inputExtra button {
+  position: absolute;
+  right: -50px;
+  bottom: 5px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.formContainer .question .contInputs .inputExtra button:hover {
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+}
+
+.formContainer .question .contPrices {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.formContainer .question .contPrices .boxPrice {
+  width: 35%;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formContainer .question .contPrices .boxPrice .boxIcon{
+  height: 25%;
+  align-content: end;
+}
+
+.formContainer .question .contPrices .titlePlan {
+  background-color: #212121;
+  border: 1px solid #848484;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  height: 70%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.formContainer .question .contPrices .titlePlan:hover{
+  border: 1px solid yellow;
+}
+
+.formContainer .question .contPrices .titlePlan h3 {
+  font-family: "KerbyFont", sans-serif;
+  font-size: 4.7rem;
+  line-height: 0.8;
+  position: relative;
+}
+
+.formContainer .question .contPrices .titlePlan h3 span{
+  font-size: 2.8rem;
+  position: absolute;
+  top: 0px;
+  right: -20px;
+}
+
+.formContainer .question .contPrices .titlePlan h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: "KerbyFont", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.formContainer .question .contPrices .titlePlan h2 span{
+  color: yellow;
+}
+
+.formContainer .question .contPrices .titlePlan .inputPlan {
+  width: 20px;
+  accent-color: yellow;
 }

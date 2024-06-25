@@ -3,16 +3,17 @@ import React, { useRef } from "react";
 import styles from "./page.module.css";
 import Head from "next/head";
 import Header from "@/components/header/header";
-import AgendarCita from "@/components/agendar-cita/agendar-cita";
 import Footer from "@/components/footer/footer";
-export default function ReservarCita() {
+import FormCompeticion from "@/components/form-regular/form-competicion";
+
+export default function AsesoriaCompeticion() {
   const goUp = useRef(null);
 
   return (
     <>
       <Head>
-        <meta charSet="UTF-8" />
-        <title>Reservar Cita Online - Kerby Coach</title>
+      <meta charSet="UTF-8" />
+        <title>Asesoria para Competición - Kerby Coach</title>
         <meta
           name="description"
           content="kerby coach online - fisicoculturismo, fitness & vida saludable"
@@ -21,7 +22,7 @@ export default function ReservarCita() {
       </Head>
       <main className={styles.main}>
         <Header goUp={goUp} />
-        <AgendarCita />
+        <FormCompeticion />
         <Footer goUp={goUp} />
       </main>
     </>
