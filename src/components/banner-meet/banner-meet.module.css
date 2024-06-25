@@ -1,204 +1,293 @@
-.bannerSection{
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    position: relative;
-    margin-top: 70px;
-    margin-bottom: 90px;
+.bannerSection {
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  position: relative;
+  margin-top: 70px;
+  margin-bottom: 90px;
 }
 
-.bgPerson{
-    position: absolute;
-    height: 500px;
-    width: 560px;
-    bottom: 0px;
-    right: 15%;
+.bgPerson {
+  position: absolute;
+  height: 500px;
+  width: 560px;
+  bottom: 0px;
+  right: 15%;
 }
 
-.bgPerson .img{
-    width: 100%;
-    height: 90%;
-    object-fit: contain;
+.bgPerson .img {
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
 }
 
-.degrad{
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(to Right, black, rgba(0, 0, 0, 0));
-    top: 0px;
-    left: 0px;
-    z-index: -1;
+.degrad {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to Right, black, rgba(0, 0, 0, 0));
+  top: 0px;
+  left: 0px;
+  z-index: -1;
 }
 
-.degradTwo{
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(to Left, black, rgba(0, 0, 0, 0));
-    top: 0px;
-    right: 0px;
-    z-index: -1;
+.degradTwo {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to Left, black, rgba(0, 0, 0, 0));
+  top: 0px;
+  right: 0px;
+  z-index: -1;
 }
 
-.bgImage{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
-    border-top: 1px solid rgba(255, 255, 255, 0.355);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.355);
+.bgImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  border-top: 1px solid rgba(255, 255, 255, 0.355);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.355);
 }
 
-.infoBanner{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;  
-    justify-content: center;
-    margin-left: 15%;
-    gap: 10px;
+.infoBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 15%;
+  gap: 10px;
 }
 
-.infoBanner h2{
-    text-transform: uppercase;
-    font-size: 3.5vw;
-    font-family: 'KerbyFont', sans-serif;
-    font-weight: 300;
-    color: white;
-    letter-spacing: 2px;
+.infoBanner h2 {
+  text-transform: uppercase;
+  font-size: 3.5vw;
+  font-family: "KerbyFont", sans-serif;
+  font-weight: 300;
+  color: white;
+  letter-spacing: 2px;
 }
 
-.infoBanner p{
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: white;
+.infoBanner p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
 }
 
-.bannerSection button{
-    margin-left: 15%;
-    background-color: rgba(0, 0, 0, 0.231);
-    backdrop-filter: blur(4px);
-    border: 1px solid yellow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.bannerSection button {
+  margin-left: 15%;
+  background-color: rgba(0, 0, 0, 0.231);
+  backdrop-filter: blur(4px);
+  border: 1px solid yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: yellow;
+  font-size: 1.1rem;
+  padding: 10px 10px 10px 25px;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.boxIcon {
+  width: 40px;
+  height: 40px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxIcon .icon {
+  font-size: 1.4rem;
+  color: black;
+  transform: rotate(-45deg);
+}
+
+.bannerSection button:hover {
+  background-color: yellow;
+  color: black;
+
+  .boxIcon {
+    background-color: black;
+  }
+
+  .icon {
     color: yellow;
-    font-size: 1.1rem;
-    padding: 10px 10px 10px 25px;
-    border-radius: 50px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    gap: 20px;
-    cursor: pointer;
+  }
 }
 
-.boxIcon{
-    width: 40px;
-    height: 40px;
-    background-color: yellow;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.boxIcon .icon{
-    font-size: 1.4rem;
-    color: black;
-    transform: rotate(-45deg);
-}
-
-.bannerSection button:hover{
-    background-color: yellow;
-    color: black;
-
-    .boxIcon{
-        background-color: black;
-    }
-
-    .icon{
-        color: yellow;
-    }
-}
-
-.yellowLight{
-    position: absolute;
-    height: 65vh;
-    width: 80%;
-    background-image: radial-gradient(closest-side, rgb(73, 73, 0),rgba(0, 0, 0, 0));
-    z-index: -3;
-    left: 5%;
-    animation: 5s ease-in-out infinite move;
+.yellowLight {
+  position: absolute;
+  height: 55vh;
+  width: 80%;
+  background-image: radial-gradient(
+    closest-side,
+    rgb(73, 73, 0),
+    rgba(0, 0, 0, 0)
+  );
+  z-index: -3;
+  left: 5%;
+  animation: 5s ease-in-out infinite move;
 }
 
 @keyframes move {
-    0%{
-        width: 80%;
-        height: 70vh;
-    }
-    50%{
-        width: 60%;
-        height: 60vh;
-    }
-    100%{
-        width: 80%;
-        height: 70vh;
-    }
+  0% {
+    width: 80%;
+    height: 60vh;
+  }
+  50% {
+    width: 60%;
+    height: 55vh;
+  }
+  100% {
+    width: 80%;
+    height: 60vh;
+  }
 }
 
-.whiteLight{
-    position: absolute;
-    height: 5px;
-    width: 10%;
-    background-image: radial-gradient(closest-side, rgb(155, 155, 155),rgba(0, 0, 0, 0));
-    z-index: -1;
-    left: 15%;
-    top: -2px;
-    animation: 5s ease-in-out infinite moveTwo;
+.whiteLight {
+  position: absolute;
+  height: 5px;
+  width: 10%;
+  background-image: radial-gradient(
+    closest-side,
+    rgb(155, 155, 155),
+    rgba(0, 0, 0, 0)
+  );
+  z-index: -1;
+  left: 15%;
+  top: -2px;
+  animation: 5s ease-in-out infinite moveTwo;
 }
 
 @keyframes moveTwo {
-    0%{
-        left: 45%;
-        width: 50%;
-    }
-    50%{
-        left: 15%;
-        width: 10%;
-    }
-    100%{
-        left: 45%;
-        width: 50%;
-    }
+  0% {
+    left: 45%;
+    width: 50%;
+  }
+  50% {
+    left: 15%;
+    width: 10%;
+  }
+  100% {
+    left: 45%;
+    width: 50%;
+  }
 }
 
-.whiteLightTwo{
-    position: absolute;
-    height: 5px;
-    width: 10%;
-    background-image: radial-gradient(closest-side, rgb(155, 155, 155),rgba(0, 0, 0, 0));
-    z-index: -1;
-    right: 15%;
-    bottom: -2px;
-    animation: 5s ease-in-out infinite moveTre;
+.whiteLightTwo {
+  position: absolute;
+  height: 5px;
+  width: 10%;
+  background-image: radial-gradient(
+    closest-side,
+    rgb(155, 155, 155),
+    rgba(0, 0, 0, 0)
+  );
+  z-index: -1;
+  right: 15%;
+  bottom: -2px;
+  animation: 5s ease-in-out infinite moveTre;
 }
 
 @keyframes moveTre {
-    0%{
-        right: 45%;
-        width: 50%;
-    }
-    50%{
-        right: 15%;
-        width: 10%;
-    }
-    100%{
-        right: 45%;
-        width: 50%;
-    }
+  0% {
+    right: 45%;
+    width: 50%;
+  }
+  50% {
+    right: 15%;
+    width: 10%;
+  }
+  100% {
+    right: 45%;
+    width: 50%;
+  }
+}
+
+@media (max-width: 1030px) {
+  .bannerSection {
+    height: 450px;
+  }
+
+  .bgPerson {
+    right: 0%;
+  }
+
+  .infoBanner {
+    margin-left: 5%;
+  }
+
+  .infoBanner h2 {
+    font-size: 5.5vw;
+    line-height: 1;
+  }
+
+  .bannerSection button {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 650px) {
+  .bannerSection {
+    height: 620px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .infoBanner {
+    align-items: center;
+    justify-content: center;
+    margin-left: 0%;
+    margin-top: 40px;
+    gap: 10px;
+  }
+
+  .infoBanner h2 {
+    font-size: 11vw;
+  }
+
+  .infoBanner p {
+    font-size: 4.4vw;
+  }
+
+  .bannerSection button {
+    margin-left: 0%;
+    position: absolute;
+    bottom: 35px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.645);
+  }
+
+  .bgPerson {
+    height: 440px;
+    width: 100%;
+    bottom: 0px;
+    right: 0%;
+  }
+
+  .bgPerson .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .whiteLight {
+    z-index: 1;
+  }
+
+  .whiteLightTwo {
+    z-index: 1;
+  }
 }
