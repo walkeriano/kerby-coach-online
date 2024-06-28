@@ -195,11 +195,11 @@
 }
 
 .bgImage {
-  height: 80vh;
-  width: 550px;
+  height: 92vh;
+  width: 700px;
   position: absolute;
   z-index: -1;
-  right: 15%;
+  right:8%;
   animation: 2s ease-in-out bg;
 }
 

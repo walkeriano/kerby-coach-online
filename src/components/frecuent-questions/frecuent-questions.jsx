@@ -1,4 +1,3 @@
-"use client";
 import { useState } from "react";
 import stylesFrecuentQuestions from "./frecuent-questions.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -6,17 +6,11 @@
   position: absolute;
   top: 35px;
   z-index: 1;
-  animation: 2.8s ease-in-out bg;
+  animation: 1s ease-in-out bg;
 }
 
 @keyframes bg {
   0% {
-    transform: translateY(-150%);
-  }
-  45% {
-    transform: translateY(-150%);
-  }
-  75% {
     transform: translateY(-150%);
   }
   100% {
@@ -34,8 +28,8 @@
 }
 
 .logoKerbyNav {
-    display: none;
-  }
+  display: none;
+}
 
 .btnMenuOn {
   width: 50px;
@@ -44,6 +38,9 @@
   border: 1px solid yellow;
   background-color: black;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btnMenuOn .icon {
@@ -76,6 +73,7 @@
   color: yellow;
   text-transform: uppercase;
   letter-spacing: 1px;
+  border-bottom: 1px solid transparent;
 }
 
 .nav button {
@@ -90,12 +88,17 @@
   cursor: pointer;
 }
 
-.nav button .icon {
-  font-size: 1.5rem;
+.nav a:hover {
+  border-bottom: 1px solid yellow;
 }
 
-.socialChannels{
-    display: none;
+.nav button .icon {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.socialChannels {
+  display: none;
 }
 
 @media (max-width: 650px) {
@@ -117,7 +120,7 @@
     width: 45px;
     height: 45px;
   }
-  
+
   .btnMenuOn .icon {
     font-size: 1.2rem;
   }
@@ -138,14 +141,14 @@
     padding-left: 30px;
   }
 
-  .logoKerbyNav{
+  .logoKerbyNav {
     width: 55px;
     display: block;
     position: absolute;
     top: 20px;
     left: 20px;
   }
-  
+
   .nav a {
     font-size: 10.7vw;
     color: black;
@@ -154,14 +157,14 @@
     font-family: "KerbyFont", sans-serif;
     line-height: 1;
   }
-  
+
   .nav button {
     background-color: black;
     position: absolute;
     top: 20px;
     right: 20px;
   }
-  
+
   .nav button .icon {
     color: yellow;
   }
@@ -175,7 +178,7 @@
     bottom: 50px;
     left: 30px;
   }
-  
+
   .socialChannels a {
     border: 2px solid black;
     width: 50px;
@@ -185,7 +188,7 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .socialChannels a .icon {
     font-size: 1.5rem;
     color: black;

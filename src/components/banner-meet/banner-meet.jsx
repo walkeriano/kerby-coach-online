@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import stylesBannerMeet from "./banner-meet.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -10,7 +11,7 @@ export default function BannerMeet() {
         <h2>asesoría exclusiva</h2>
         <p>Cita privada con el coach</p>
       </div>
-      <button>
+      <Link href="/reservar-cita" className={stylesBannerMeet.button}>
         Elegir fecha
         <div className={stylesBannerMeet.boxIcon}>
           <FontAwesomeIcon
@@ -19,7 +20,7 @@ export default function BannerMeet() {
             size="2x"
           />
         </div>
-      </button>
+      </Link>
       <div className={stylesBannerMeet.bgPerson}>
         <Image
           src="/images/ker-tre.png"

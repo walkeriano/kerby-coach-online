@@ -18,6 +18,20 @@ html, body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar{
+  background-color: rgba(255, 255, 0, 0.136);
+  width: 6px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: rgba(255, 255, 0, 0.358);
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
 
 @font-face {
   font-family: "KerbyFont";

@@ -79,7 +79,7 @@
   color: white;
 }
 
-.bannerSection button {
+.bannerSection .button {
   margin-left: 15%;
   background-color: rgba(0, 0, 0, 0.231);
   backdrop-filter: blur(4px);
@@ -113,7 +113,7 @@
   transform: rotate(-45deg);
 }
 
-.bannerSection button:hover {
+.bannerSection .button:hover {
   background-color: yellow;
   color: black;
 

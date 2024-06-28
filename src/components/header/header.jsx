@@ -52,9 +52,9 @@ export default function Header({ goUp }) {
             width={70}
             height={100}
           />
-          <a href="/">Asesorías</a>
-          <a href="/">Recomendaciones</a>
-          <a href="/">Preguntas</a>
+          <a href="/">Inicio</a>
+          <a href="/seleccionar-asesoria">Asesorías</a>
+          <a href="/reservar-cita">Reservar cita</a>
           <button onClick={() => setOpenMenu(true)}>
             <FontAwesomeIcon
               className={styleHeader.icon}

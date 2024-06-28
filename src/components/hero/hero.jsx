@@ -26,7 +26,7 @@ export default function Hero() {
           </h2>
         </div>
         <div className={stylesHero.btnsHero} >
-          <Link href="/asesoria-regular" className={stylesHero.btnFirst}>
+          <Link href="/seleccionar-asesoria" className={stylesHero.btnFirst}>
             Personalizar plan
             <div className={stylesHero.iBtn}>
               <FontAwesomeIcon
