@@ -381,3 +381,44 @@
     color: black;
   }
 }
+
+
+
+@media (max-width: 1030px){
+  
+  .title h2 {
+    font-size: 6.5vw;
+  }
+  
+  .leftSection {
+    width: 40%;
+  }
+
+  .contPayment h3 {
+    font-size: 6.5vw;
+  }
+
+}
+
+
+@media (max-width: 650px){
+
+  .title h2 {
+    font-size: 9vw;
+    margin-top: 50px;
+  }
+
+  .title p {
+    margin-top: 10px;
+    width: 70%;
+  }
+
+  .contForm {
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .leftSection {
+    width: 75%;
+  }
+}

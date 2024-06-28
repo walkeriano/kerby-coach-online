@@ -476,33 +476,23 @@
   
   .formContainer .question .title h2 {
     font-size: 6vw;
-    border: 1px solid red;
   }
 
   .formContainer .question .contInputs {
     width: 65%;
-    border: 1px solid red;
   }
  
-  
-  
 }
 
 @media (max-width: 650px){
 
-  .formContainer {
-    border: 1px solid red;
-  }
-
   .formContainer .question {
     gap: 30px;
-    border: 1px solid red;
   }
 
   .formContainer .question .title {
     width: 100%;
-    border: 1px solid red;
-    margin-top: 13vh;
+    margin-top: 17vh;
     margin-bottom: 20px;
   }
 
@@ -524,8 +514,6 @@
     position: relative;
   }
 
-  
-
   .formContainer .question .contInputs .boxInput {
     width: 100%;
   }
@@ -534,7 +522,6 @@
     width: 80%;
     gap: 20px;
     bottom: 5vh;
-    border: 1px solid red;
   }
 
   .formContainer .question .contInputs .boxInputSelect {
@@ -546,7 +533,33 @@
     height: 100px;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding-bottom: 0px;
+    border: 1px solid rgb(56, 56, 56);
   }
+
+  .formContainer .question .contInputs .boxInputRadio p {
+    width: 45%;
+    font-size: 1.1rem;
+  }
+  
+  .formContainer .question .contInputs .boxInputRadio span {
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.618), rgba(0, 0, 0, 0.618));
+    border-radius: 12px 12px 12px 12px;
+  }
+
+  .formContainer .question .contInputsVcl {
+    width: 75%;
+  }
+
+  .formContainer .question .contInputs .boxConditional {
+    height: 60px;
+  }
+
+  .formContainer .question .contInputs .inputExtra {
+    bottom: -100px;
+    width: 85%;
+  }
+
 }
